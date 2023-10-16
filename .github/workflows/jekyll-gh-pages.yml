@@ -50,23 +50,6 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v2
 
-      - name: Laravel deploy 2 from laravel deploy
-  # You may pin to the exact commit or the version.
-  # uses: khorramk/laravel-deploy@7db660fb60fe631444004eebb7388ef6133df357
-        uses: khorramk/laravel-deploy@v0.0.5
-        with:
-          # Deploy user
-          user: root
-          # Deploy host
-          host: localhost
-          # Deploy port
-          port: 3306
-          # Path source on server
-          path: 8000
-          # Deploy owner
-          owner: deklan
-
-
       - name: Laravel PHPUnit
   # You may pin to the exact commit or the version.
   # uses: nathanheffley/laravel-phpunit-action@1ac680fbc5f20621343f0d7ba450a02b807c576e
